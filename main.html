@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -8,7 +9,41 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<form method="post">
+		<!--name-->
+	    <label for="name">Name</label>
+	    <input id="name" type="text" required><br><br>
+		<!--email-->
+		<label for="email">Email</label>
+	    <input id="email"type="email" required><br><br>
+		<!--gender-->
+		<label for="gender">Gender</label>
+		<input type="radio" name="gender" required>male
+		<input type="radio"name="gender" required>female<br><br>
+		<!--car brands-->
+		<label for="cars">Car Brands</label>
+		<select name="cars" id="cars">
+  
+  <option value="BMW">BMW</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select><br><br>
+
+		<!--carage-->
+		<label for="carage">Car Age</label>
+		<input id="carage"type="number"min="0"max="20"placeholder="years" required>
+		<input id="carage"type="number"min="0"max="11"placeholder="months"required>
+		<br><br>
+		<!--date of birth-->
+		<label for="dob">DOB</label>
+		<input id="dop" type="date" max="2023-01-10"required><br><br>
+		<!--password-->
+		<label for="password">Password</label>
+		<input id="password" type="password"required><br><br>
+		<!--sumbit-->
+		<button type="submit" >submit button</button>
+	</form>
+    <script type="text/javascript" src="./script.js">		
 </script>
 
 </body>
